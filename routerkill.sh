@@ -325,7 +325,7 @@ fi
 
 if [[ $i > 0 ]]
 then
-echo -e "$azul Pagina$rojo $pagina$violeta2/$line$verde Found"
+echo -e "$azul Pagina$rojo $pagina$violeta2/$line$verde Found $rojo Code: $verde $result"
 sleep 2
 echo
 echo -e "$azul Posible panel de la pagina: $verde$pagina/$line$verde"
@@ -334,7 +334,7 @@ echo
 echo
 break
 else
-echo -e "$azul Pagina$rojo $pagina$violeta2/$line$rojo Not Found"
+echo -e "$azul Pagina$rojo $pagina$violeta2/$line$rojo Not Found $verde Code:$rojo $result"
 fi
 done < $directory/directorys.txt
 echo -e "$violeta2(*)$azul volviendo al menu principal.."
